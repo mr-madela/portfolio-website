@@ -13,60 +13,53 @@
     <title>Education | Mr. Madela Snabo</title>
     <!-- END OF PAGE SETTINGS -->
 
-
     <!-- START OF GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
           rel="stylesheet">
     <!-- END OF GOOGLE FONTS -->
-
 
     <!-- START OF FONT AWESOME -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- END OF FONT AWESOME -->
 
-
     <!-- START OF CSS FILES -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/education.css">
     <!-- END OF CSS FILES -->
-
 </head>
 
-
 <body id="top">
-
 
     <!-- START OF HEADER -->
     <header>
         <div class="container">
             <nav>
-
                 <a href="index.html" class="logo">
                     <span class="logo-main">Mr. Madela</span>
                     <span class="logo-divider"></span>
                     <span class="logo-sub">SNABO</span>
                 </a>
 
-                <div class="menu-toggle" id="menu-toggle">
+                <div class="menu-toggle"
+                     id="menu-toggle"
+                     aria-label="Toggle navigation"
+                     aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
 
                 <div class="nav-menu" id="nav-menu">
-
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="skills.html">Skills</a></li>
                         <li><a href="projects.html">Projects</a></li>
+
                         <li>
                             <a href="education.html"
                                class="active"
@@ -74,6 +67,7 @@
                                 Education
                             </a>
                         </li>
+
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
 
@@ -85,9 +79,7 @@
                             Download CV
                         </a>
                     </div>
-
                 </div>
-
             </nav>
         </div>
     </header>
@@ -97,16 +89,12 @@
     <!-- START OF MAIN CONTENT -->
     <main>
 
-
-        <!-- START OF EDUCATION INTRO -->
+        <!-- START OF EDUCATION HERO -->
         <section class="education-intro">
-            <div class="container">
+            <div class="container education-hero-layout">
 
                 <div class="education-intro-content">
-
-                    <span class="section-label">
-                        My Education
-                    </span>
+                    <span class="section-label">My Education</span>
 
                     <h1>
                         Learning today.
@@ -120,42 +108,81 @@
                         software solutions.
                     </p>
 
+                    <a href="#academic-background"
+                       class="education-hero-link">
+                        Explore my education
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
                 </div>
 
-                <div class="education-intro-mark"
-                     aria-hidden="true">
-                    <i class="fa-solid fa-graduation-cap"></i>
+                <!-- DECORATIVE CODE WINDOW -->
+                <div class="education-hero-visual" aria-hidden="true">
+
+                    <div class="hero-visual-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <small>learning.exe</small>
+                    </div>
+
+                    <div class="hero-code-line">
+                        <b>01</b>
+                        <span>const</span>
+                        goal = <em>"Software Developer";</em>
+                    </div>
+
+                    <div class="hero-code-line">
+                        <b>02</b>
+                        <span>learn</span>("programming");
+                    </div>
+
+                    <div class="hero-code-line">
+                        <b>03</b>
+                        <span>build</span>("real projects");
+                    </div>
+
+                    <div class="hero-code-line">
+                        <b>04</b>
+                        <span>improve</span>("every day");
+                    </div>
+
+                    <div class="hero-visual-footer">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        STUDENT • DEVELOPER IN PROGRESS
+                    </div>
+
                 </div>
+                <!-- END OF DECORATIVE CODE WINDOW -->
 
             </div>
+
+            <div class="education-hero-shape" aria-hidden="true"></div>
         </section>
-        <!-- END OF EDUCATION INTRO -->
+        <!-- END OF EDUCATION HERO -->
 
 
         <!-- START OF ACADEMIC BACKGROUND -->
-        <section class="academic-section">
+        <section class="academic-section education-section"
+                 id="academic-background">
+
             <div class="container">
 
                 <div class="education-section-heading">
+                    <span class="section-label">Academic Background</span>
 
-                    <span class="section-label">
-                        Academic Background
-                    </span>
-
-                    <h2>My current qualification</h2>
+                    <h2>
+                        My current qualification<span class="heading-dot">.</span>
+                    </h2>
 
                     <p>
-                        I am continuing to build my foundation in software
-                        development through my diploma studies.
+                        I am building my foundation in software development
+                        through my diploma studies.
                     </p>
-
                 </div>
-
 
                 <article class="academic-card">
 
-                    <div class="academic-icon"
-                         aria-hidden="true">
+                    <div class="academic-icon" aria-hidden="true">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
 
@@ -166,11 +193,10 @@
                             Currently studying
                         </span>
 
-                        <h3>
-                            Diploma in IT in Software Development
-                        </h3>
+                        <h3>Diploma in IT in Software Development</h3>
 
                         <p class="academic-institution">
+                            <i class="fa-solid fa-building-columns"></i>
                             IIE Rosebank College
                         </p>
 
@@ -194,33 +220,27 @@
 
 
         <!-- START OF AREAS OF STUDY -->
-        <section class="study-section">
+        <section class="study-section education-section">
             <div class="container">
 
                 <div class="education-section-heading">
-
-                    <span class="section-label">
-                        What I Study
-                    </span>
+                    <span class="section-label">What I Study</span>
 
                     <h2>
-                        Building a strong technical foundation
+                        Building a strong technical foundation<span class="heading-dot">.</span>
                     </h2>
 
                     <p>
-                        My course covers several areas that support the design
-                        and development of software systems.
+                        These core areas support my growth in software
+                        and database development.
                     </p>
-
                 </div>
-
 
                 <div class="study-grid">
 
-                    <!-- PROGRAMMING -->
+                    <!-- START OF PROGRAMMING CARD -->
                     <article class="study-card">
-
-                        <span class="study-number">01</span>
+                        <span class="study-number">01 / CODE</span>
 
                         <div class="study-icon">
                             <i class="fa-solid fa-code"></i>
@@ -233,13 +253,14 @@
                             code to implement software functionality.
                         </p>
 
+                        <span class="study-card-line"></span>
                     </article>
+                    <!-- END OF PROGRAMMING CARD -->
 
 
-                    <!-- WEB DEVELOPMENT -->
+                    <!-- START OF WEB DEVELOPMENT CARD -->
                     <article class="study-card">
-
-                        <span class="study-number">02</span>
+                        <span class="study-number">02 / WEB</span>
 
                         <div class="study-icon">
                             <i class="fa-solid fa-laptop-code"></i>
@@ -252,13 +273,14 @@
                             and usable websites and web experiences.
                         </p>
 
+                        <span class="study-card-line"></span>
                     </article>
+                    <!-- END OF WEB DEVELOPMENT CARD -->
 
 
-                    <!-- SYSTEMS ANALYSIS -->
+                    <!-- START OF SYSTEMS ANALYSIS CARD -->
                     <article class="study-card">
-
-                        <span class="study-number">03</span>
+                        <span class="study-number">03 / SYSTEMS</span>
 
                         <div class="study-icon">
                             <i class="fa-solid fa-diagram-project"></i>
@@ -271,13 +293,14 @@
                             systems can address user and business needs.
                         </p>
 
+                        <span class="study-card-line"></span>
                     </article>
+                    <!-- END OF SYSTEMS ANALYSIS CARD -->
 
 
-                    <!-- DATABASE DESIGN -->
+                    <!-- START OF DATABASE DESIGN CARD -->
                     <article class="study-card">
-
-                        <span class="study-number">04</span>
+                        <span class="study-number">04 / DATA</span>
 
                         <div class="study-icon">
                             <i class="fa-solid fa-database"></i>
@@ -290,36 +313,34 @@
                             with data in database systems.
                         </p>
 
+                        <span class="study-card-line"></span>
                     </article>
+                    <!-- END OF DATABASE DESIGN CARD -->
 
                 </div>
-
             </div>
         </section>
         <!-- END OF AREAS OF STUDY -->
 
 
         <!-- START OF LEARNING JOURNEY -->
-        <section class="learning-section">
+        <section class="learning-section education-section">
             <div class="container learning-grid">
 
-
-                <!-- LEARNING INTRODUCTION -->
+                <!-- START OF LEARNING INTRODUCTION -->
                 <div class="learning-copy">
 
-                    <span class="section-label">
-                        Beyond the Classroom
-                    </span>
+                    <span class="section-label">Beyond the Classroom</span>
 
                     <h2>
-                        Turning learning into practical experience.
+                        Turning learning into practical experience<span class="heading-dot">.</span>
                     </h2>
 
                     <p>
-                        Alongside my studies, I am working to strengthen my
-                        skills through personal projects and practical coding.
-                        This helps me connect academic concepts with real
-                        development tasks.
+                        Alongside my studies, I am strengthening my skills
+                        through personal projects and practical coding.
+                        This helps me connect academic concepts with
+                        real development tasks.
                     </p>
 
                     <p>
@@ -327,71 +348,63 @@
                         database-driven applications and responsive websites.
                     </p>
 
-                    <a href="projects.html" class="btn">
+                    <a href="projects.html"
+                       class="btn education-primary-btn">
                         Explore My Projects
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
                 </div>
+                <!-- END OF LEARNING INTRODUCTION -->
 
 
-                <!-- LEARNING GOALS -->
+                <!-- START OF LEARNING GOALS -->
                 <div class="learning-points">
 
-                    <div class="learning-point">
-
+                    <article class="learning-point">
                         <span class="learning-point-icon">
                             <i class="fa-solid fa-terminal"></i>
                         </span>
 
                         <div>
                             <h3>Practice coding</h3>
-
                             <p>
                                 Apply programming concepts by building
                                 and improving projects.
                             </p>
                         </div>
+                    </article>
 
-                    </div>
-
-
-                    <div class="learning-point">
-
+                    <article class="learning-point">
                         <span class="learning-point-icon">
                             <i class="fa-solid fa-database"></i>
                         </span>
 
                         <div>
                             <h3>Develop database skills</h3>
-
                             <p>
                                 Build understanding of structured data
                                 and database-backed solutions.
                             </p>
                         </div>
+                    </article>
 
-                    </div>
-
-
-                    <div class="learning-point">
-
+                    <article class="learning-point">
                         <span class="learning-point-icon">
                             <i class="fa-solid fa-book-open"></i>
                         </span>
 
                         <div>
                             <h3>Keep learning</h3>
-
                             <p>
                                 Continue learning new techniques
                                 and improving existing skills.
                             </p>
                         </div>
-
-                    </div>
+                    </article>
 
                 </div>
+                <!-- END OF LEARNING GOALS -->
 
             </div>
         </section>
@@ -400,34 +413,28 @@
 
         <!-- START OF CALL TO ACTION -->
         <section class="education-cta">
-            <div class="container">
+            <div class="container education-cta-content">
 
-                <div class="education-cta-content">
+                <span class="section-label">The Next Step</span>
 
-                    <span class="section-label">
-                        Next Step
-                    </span>
+                <h2>
+                    Learning is better when you build<span class="heading-dot">.</span>
+                </h2>
 
-                    <h2>
-                        See what I am learning to build.
-                    </h2>
+                <p>
+                    Explore the projects where I put my software
+                    development knowledge into practice.
+                </p>
 
-                    <p>
-                        Explore the projects where I put my software
-                        development knowledge into practice.
-                    </p>
-
-                    <a href="projects.html" class="btn">
-                        View My Projects
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
+                <a href="projects.html"
+                   class="btn education-cta-btn">
+                    View My Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
             </div>
         </section>
         <!-- END OF CALL TO ACTION -->
-
 
     </main>
     <!-- END OF MAIN CONTENT -->
@@ -439,8 +446,7 @@
 
             <div class="footer-grid">
 
-
-                <!-- FOOTER COLUMN 1 -->
+                <!-- START OF FOOTER COLUMN 1 -->
                 <div class="footer-column">
 
                     <a href="index.html" class="footer-logo">
@@ -481,11 +487,11 @@
                     </p>
 
                 </div>
+                <!-- END OF FOOTER COLUMN 1 -->
 
 
-                <!-- FOOTER COLUMN 2 -->
+                <!-- START OF FOOTER COLUMN 2 -->
                 <div class="footer-column">
-
                     <h3>Navigation</h3>
 
                     <a href="index.html">Home</a>
@@ -494,13 +500,12 @@
                     <a href="projects.html">Projects</a>
                     <a href="education.html" aria-current="page">Education</a>
                     <a href="contact.html">Contact</a>
-
                 </div>
+                <!-- END OF FOOTER COLUMN 2 -->
 
 
-                <!-- FOOTER COLUMN 3 -->
+                <!-- START OF FOOTER COLUMN 3 -->
                 <div class="footer-column">
-
                     <h3>Services</h3>
 
                     <a href="projects.html">Software Development</a>
@@ -508,13 +513,12 @@
                     <a href="projects.html">Web Development</a>
                     <a href="projects.html">Desktop Applications</a>
                     <a href="projects.html">UI Development</a>
-
                 </div>
+                <!-- END OF FOOTER COLUMN 3 -->
 
 
-                <!-- FOOTER COLUMN 4 -->
+                <!-- START OF FOOTER COLUMN 4 -->
                 <div class="footer-column">
-
                     <h3>Contact</h3>
 
                     <a href="mailto:snabo021226@gmail.com">
@@ -527,17 +531,17 @@
                         +27 63 614 7288
                     </a>
 
-                    <a href="#">
+                    <span class="footer-contact-location">
                         <i class="fas fa-location-dot"></i>
                         South Africa, Gauteng, Johannesburg
-                    </a>
-
+                    </span>
                 </div>
+                <!-- END OF FOOTER COLUMN 4 -->
 
             </div>
 
 
-            <!-- FOOTER BOTTOM -->
+            <!-- START OF FOOTER BOTTOM -->
             <div class="footer-bottom">
 
                 <p>
@@ -550,6 +554,7 @@
                 </a>
 
             </div>
+            <!-- END OF FOOTER BOTTOM -->
 
         </div>
     </footer>
